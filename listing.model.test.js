@@ -18,7 +18,10 @@ listing =  {
 describe('Listing Schema Unit Tests', function() {
 
   before(function(done) {
-    mongoose.connect(config.db.uri);
+    mongoose.Promise = global.Promise;
+    mongoose.connect(config.db.uri, {
+      useMongoClient: true
+    });
     done();
   });
 
