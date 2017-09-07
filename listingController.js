@@ -29,7 +29,8 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
         $scope.detailedInfo.coordinate
         if (!$scope.detailedInfo.code) $scope.detailedInfo.code = "N/A";
         if (!$scope.detailedInfo.name) $scope.detailedInfo.name = "N/A";
-        if (!$scope.detailedInfo.coordinates) $scope.detailedInfo.coordinates = "N/A";
+        if (!$scope.detailedInfo.coordinates.latitude) $scope.detailedInfo.coordinates.latitude = "N/A";
+        if (!$scope.detailedInfo.coordinates.longitude) $scope.detailedInfo.coordinates.longitude = "N/A";        
         if (!$scope.detailedInfo.address) $scope.detailedInfo.address = "N/A";
     };
 

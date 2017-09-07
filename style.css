@@ -12,7 +12,7 @@ input:invalid {
 }
 
 input:valid {
-  background-color: #ddffdd;
+  border-color: green;
 }
   
 input:required {
