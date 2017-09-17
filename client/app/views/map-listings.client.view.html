@@ -1,0 +1,9 @@
+<div ng-app="listings" ng-controller="ListingsController" ng-init="find()">
+    <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true" options="options" bounds="map.bounds">
+        <ui-gmap-markers models="listings" idkey="'_id'" coords="'coordinates'" events="listings.events">
+            <ui-gmap-windows show="'show'">
+                <div ng-non-bindable>{{name}}<br/>{{code}}<br/>{{address}}</div>
+            </ui-gmap-windows>
+        </ui-gmap-markers>
+    </ui-gmap-google-map>
+</div>
